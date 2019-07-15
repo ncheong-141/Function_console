@@ -11,6 +11,7 @@ Program objectives:
                     
                     
 Notes on code structure: 
+
           - Console linked to static library of numerical functions.
           
           - Console data structure created as a class to group all information about the console together such as:
