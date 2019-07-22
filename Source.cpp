@@ -30,8 +30,8 @@ int main() {
 			<< "Input: ";
 
 		/* Input user defined data type */
-		std::cin >> console.dtypeswitch;										// Define input for datatype
-		console.input_controlguard(console.dtypeswitch, console.dtype_max);		// Check if input is valid and re-assign value if required. 
+		std::cin >> console.dtypeswitch;					// Define input for datatype
+		console.input_controlguard(console.dtypeswitch, console.dtype_max);	// Check if input is valid and re-assign value if required. 
 
 		/* Dynamic polymorphism for input data structure */
 		INPUT* IN = dtype_derivedclasstype(console);
@@ -43,8 +43,8 @@ int main() {
 			<< "	2 -> STD style elementwise vector multiplication" << std::endl
 			<< "Command: ";
 
-		std::cin >> console.input;												// Define input for mathematical operation
-		console.input_controlguard(console.input, console.mathfun_max);			// Check if input is valid and re-assign value if required.
+		std::cin >> console.input;						// Define input for mathematical operation
+		console.input_controlguard(console.input, console.mathfun_max);		// Check if input is valid and re-assign value if required.
 
 
 		/* Get function using a switch with enum integer values */
