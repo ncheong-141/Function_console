@@ -29,8 +29,8 @@ public:
 	/* Switch enum for different functions*/
 	enum Function_index
 	{
-		close = 0,				// Close console 
-		open,					// Open console
+		close = 0,			// Close console 
+		open,				// Open console
 		STDvector_element,		// vector elemtwise multiplication using std::vector
 		mathfun_max,			// mathfunction choice limit (-1) 
 	};
@@ -39,7 +39,7 @@ public:
 	enum Datatype_index { integer = 0, floatpt, doubles, dtype_max };
 
 	/* Input flow control containers */
-	int  dtypeswitch = 0;					// Control value for datatype selection
+	int  dtypeswitch = 0;				// Control value for datatype selection
 	int  input = 0;					// Control value for mathematical operation 
 
 	/* Console member functions */
@@ -70,8 +70,8 @@ public:
 		//		if invalid input         or   input exceeds index of choices (stops meaningless inputs to code) 
 		while ((std::cin.fail() == true) || value >= choicelimit)
 		{
-			std::cin.clear();				 // Restore cin to normal operation state from failure state
-			std::cin.ignore(INT_MAX, '\n');   // Ignore last input (clear upto INT_MAX characters until you reach an 'n')  
+			std::cin.clear();				// Restore cin to normal operation state from failure state
+			std::cin.ignore(INT_MAX, '\n');   		// Ignore last input (clear upto INT_MAX characters until you reach an 'n')  
 			std::cout << "Please enter a valid variable: ";
 			std::cin >> value;
 		}
@@ -86,8 +86,8 @@ public:
 	{
 		while (std::cin.fail() == true)
 		{
-			std::cin.clear();				 // Restore cin to normal operation state 
-			std::cin.ignore(INT_MAX, '\n');  // Ignore last input (clear upto INT_MAX characters until you reach an '\n'
+			std::cin.clear();				// Restore cin to normal operation state 
+			std::cin.ignore(INT_MAX, '\n');  		// Ignore last input (clear upto INT_MAX characters until you reach an '\n'
 			std::cout << "Please enter a valid variable: ";
 			std::cin >> value;
 		}
@@ -109,7 +109,7 @@ public:
 		{
 			std::cout << " std::cin.fail() called!)\n";
 			std::cin.clear();				 // Restore cin to normal operation state 
-			std::cin.ignore(INT_MAX, '\n');  // Ignore last input (clear upto INT_MAX characters until you reach an '\n'
+			std::cin.ignore(INT_MAX, '\n'); 		 // Ignore last input (clear upto INT_MAX characters until you reach an '\n'
 			std::cout << "Please enter a valid variable: ";
 			std::cin >> value;
 		}
